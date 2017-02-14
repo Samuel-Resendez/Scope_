@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Furniture Website </title>
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="style.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.0/css/hover-min.css" rel="stylesheet"/>
+
+  </head>
+  <body>
+    <nav class="navbar navbar-default">
+      <div classs="container-fluid">
+	       <div class="navbar-header">
+	          <a target="_blank" href="https://my.usc.edu">
+	             <img class="top_image" src="http://www.graphicsfuel.com/wp-content/uploads/2014/09/polygon-background6-preview.jpg"/>
+	          </a>
+	         </div>
+         </div>
+         <ul class="nav navbar-nav">
+    <li><a href="#" onclick="click0()">Home</a></li>
+    <li><a href="#" onclick="click1()">Chairs</a></li>
+    <li><a href="#" onclick="click3()">Desks</a></li>
+    <li><a href="#" onclick="click2()">Meatballs</a></li>
+         </ul>
+       </div>
+     </div>
+
+    </nav>
+    <div class="container" id="introduction">
+      <div class="row">
+	<div class="col-md-5">
+	  <h1> Welcome to an IKEA Knock-off</h1>
+	  <p> We actually just buy things off Free for Sale and refurbish them</p>
+	</div>
+	<div class="col-md-7">
+	  <img class="img-responsive" src="http://images2.roomstogo.com/is/image/roomstogo/lr_sof_8503378p_newportcove_cardinal~Cindy-Crawford-Home-Newport-Cove-Cardinal-Sofa.jpeg?$PDP_Primary_936x650$" style="height: 250px">
+	</div>
+
+      </div>
+    </div>
+    <div class="containter">
+      <div class="row">
+	       <h1 class="divider">Categories</h1>
+	     <div class="col-sm-4" id="meatballs">
+	        <img class="hvr-overline-reveal furnitem" src="http://foodnetwork.sndimg.com/content/dam/images/food/fullset/2015/1/28/1/FNM_030115-Insert-No1-Italian-Meatballs_s4x3.jpg">
+	         <h2>Meatballs</h2>
+	      </div>
+
+	     <div class="col-sm-4"id="chairs">
+	        <img class="furnitem" src="http://www.ikea.com/PIAimages/0355482_PE547815_S5.JPG">
+          <h2>Chairs</h2>
+        </div>
+
+      <div class="col-sm-4" id="desks">
+        <img class="furnitem" src="http://www.ikea.com/PIAimages/0461352_PE607513_S5.JPG">
+        <h2> Desks </h2>
+      </div>
+    </div>
+  </div>
+  <script>
+  function click0() {
+    var arr = [];
+    var elem1 = document.getElementById("chairs");
+    var elem2 = document.getElementById("meatballs");
+    var elem3 = document.getElementById("desks");
+    arr.push(elem1);
+    arr.push(elem2);
+    arr.push(elem3);
+    for(var i = 0; i < 3; i++) {
+      arr[i].style.border = "none";
+    }
+
+  }
+  function click1() {
+    var elem = document.getElementById("chairs")
+    elem.style.border = "1px solid black";
+  }
+  function click2() {
+    var elem = document.getElementById("meatballs");
+    elem.style.border = "1px solid black";
+  }
+  function click3() {
+    var elem = document.getElementById("desks");
+    elem.style.border = "1px solid black";
+  }
+
+  </script>
+  </body>
+
+</html>

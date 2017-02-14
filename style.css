@@ -1,0 +1,25 @@
+
+
+.top_image {
+  width: 80px;
+  margin: 0 10px;
+
+}
+img {
+  text-align: center;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: #FFCC00;
+}
+
+.divider {
+
+}
+.furnitem {
+  border-radius: 50%;
+  height: 150px;
+}
+.divider {
+  text-align: center;
+}
